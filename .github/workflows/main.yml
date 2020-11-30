@@ -19,7 +19,7 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Build
       run: |
-        ls
+        ls /usr/lib/x86_64-linux-gnu/libxcb.so.1
         pwd
         mkdir build && cd ./build
         cmake ..
