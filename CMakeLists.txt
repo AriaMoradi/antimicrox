@@ -97,6 +97,8 @@ if(UNIX)
 
     if(WITH_X11)
         find_package(X11 REQUIRED)
+        if (NOT X11_Xkb_FOUND)
+                message(FATAL_ERROR "Unable to locate the X11 Xkb extension.")
     endif(WITH_X11)
 
     if(WITH_XTEST AND NOT WITH_X11)
