@@ -474,6 +474,7 @@ if(UNIX)
         LIST(APPEND EXTRA_LIBS ${X11_X11_LIB})
         LIST(APPEND EXTRA_LIBS ${X11_Xi_LIB})
         LIST(APPEND EXTRA_LIBS ${X11_xcb_LIB})
+        LIST(APPEND EXTRA_LIBS ${X11_xcb_util_LIB})
         LIST(APPEND QT_LIBS Qt5::X11Extras)
     endif(WITH_X11)
 
