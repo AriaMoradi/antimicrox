@@ -505,6 +505,9 @@ if(UNIX)
         ${antimicrox_FORMS_HEADERS}
         ${antimicrox_RESOURCES_RCC}
     )
+	
+
+    message("libraries we're linking: " ${QT_LIBS} ${SDL2_LIBRARIES} ${EXTRA_LIBS})    
 
     target_link_libraries(antimicrox ${QT_LIBS} ${SDL2_LIBRARIES} ${EXTRA_LIBS})
 endif(UNIX)
